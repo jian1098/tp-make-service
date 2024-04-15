@@ -1,0 +1,22 @@
+{
+    "name": "jian1098/tp-make-service",
+    "description": "thinkphp框架命令行创建Service Class(即服务层，基于controller-service-repository目录架构)",
+    "type": "library",
+    "require": {
+        "php": ">=5.6",
+        "topthink/framework": ">=5.0"
+    },
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "Jian1098\\TpMakeService\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jian1098",
+            "email": "jian1098@qq.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
