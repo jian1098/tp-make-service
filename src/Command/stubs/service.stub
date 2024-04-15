@@ -1,0 +1,21 @@
+<?php
+
+namespace {%namespace%};
+
+use app\common\repository\{%repositoryName%};
+
+class {%className%}
+{
+    /**
+     * 绑定仓库
+     * @var {%repositoryName%}
+     */
+    protected $repository;
+
+    public function __construct({%repositoryName%} $repository)
+    {
+        $this->repository = $repository;
+    }
+
+
+}
