@@ -1,13 +1,4 @@
 <?php
-// +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2016 http://thinkphp.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: 刘志淳 <chun@engineer.com>
-// +----------------------------------------------------------------------
 
 namespace Jian1098\TpMakeService\Command;
 
@@ -46,10 +37,9 @@ class Service extends Make
         $class = str_replace($namespace . '\\', '', $name);
         $repositoryName = str_replace('Service', '', $class) . 'Repository';
 
-        return str_replace(['{%className%}', '{%namespace%}', '{%app_namespace%}', '{%repositoryName%}'], [
+        return str_replace(['{%className%}', '{%namespace%}', '{%repositoryName%}'], [
             $class,
             $namespace,
-            App::$namespace,
             $repositoryName,
         ], $stub);
 
