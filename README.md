@@ -8,3 +8,4 @@ composer require jian1098/tp-make-service:1.0.1
 
 # thinkphp6.0+
 composer require jian1098/tp-make-service:2.0.1
+```
