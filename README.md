@@ -66,7 +66,7 @@ thinkphp框架命令行创建Service Class(即服务层，基于controller-servi
   php think make:service TestService
   ```
 
-  执行上面的命令将创建文件`application/common/service/TestService.php`，内容如下
+  执行上面的命令将创建文件`application/common/service/TestService.php`（thinkphp5）或`app/service/TestService.php`（thinkphp6+），内容如下
 
   ```php
   <?php
