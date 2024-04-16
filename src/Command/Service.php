@@ -23,9 +23,9 @@ class Service extends Make
         return $stubPath . 'Service.stub';
     }
 
-    protected function getNamespace($appNamespace, $module)
+    protected function getNamespace(string $app): string
     {
-        return parent::getNamespace($appNamespace, $module) . '\service';
+        return parent::getNamespace($app) . '\\' . 'service';
     }
 
     protected function buildClass($name)
